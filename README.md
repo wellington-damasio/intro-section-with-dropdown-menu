@@ -91,9 +91,6 @@ I learned how to animated dropdown (and it's consequences...)
 const dropdownToggles = document.querySelectorAll('.dropdown__btn')
 const dropdowns = document.querySelectorAll('.dropdown')
 
-console.log(dropdownToggles)
-console.log(dropdowns)
-
 dropdownToggles.forEach(toggle => {
   toggle.addEventListener('click', () => {
     const target = toggle.getAttribute('data-target')
