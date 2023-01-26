@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intro Section With Dropdown Menu | FTM</title>
+  <link rel="shortcut icon" href="/favicon-32x32.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="./styles/styles.css">
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+
+  <script defer src="./js/dropdown.js" type="module"></script>
+  <script defer src="./js/mobileNav.js"></script>
+</head>
+
+<body>
+  <header class="l-header">
+    <nav class="nav">
+      <a href="#" class="logo-link">
+        <img src="/images/logo.svg" alt="">
+      </a>
+      <ul class="nav__list">
+        <button class="btn btn-close">
+          <img src="/public/vectors/icon-close-menu.svg" alt="">
+        </button>
+        <li class="nav__item relative">
+          <button class="dropdown__btn" data-target="#features-dropdown">
+            Features
+          </button>
+
+          <ul class="dropdown" id="features-dropdown" tabindex="-1">
+            <li class="dropdown__item" style="--icon-url: url('/vectors/icon-todo.svg')">
+              <a class="dropdown__link" href="#">Todo List</a>
+            </li>
+            <li class="dropdown__item" style="--icon-url: url('/vectors/icon-calendar.svg')">
+              <a class="dropdown__link" href="#">Calendar</a>
+            </li>
+            <li class="dropdown__item" style="--icon-url: url('/vectors/icon-reminders.svg')">
+              <a class="dropdown__link" href="#">Reminders</a>
+            </li>
+            <li class="dropdown__item" style="--icon-url: url('/vectors/icon-planning.svg')">
+              <a class="dropdown__link" href="#">Planning</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item relative">
+          <button class="dropdown__btn" data-target="#company-dropdown">
+            Company
+          </button>
+
+          <ul class="dropdown" style="right: -3rem" id="company-dropdown" tabindex="-1">
+            <li class="dropdown__item">
+              <a class="dropdown__link" href="#">History</a>
+            </li>
+            <li class="dropdown__item">
+              <a class="dropdown__link" href="#">Our team</a>
+            </li>
+            <li class="dropdown__item">
+              <a class="dropdown__link" href="#">Blog</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Carrers</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">About</a>
+        </li>
+
+        <li class="nav__item nav__item--separate">
+          <button class="btn">Login</button>
+        </li>
+        <li class="nav__item">
+          <button class="btn btn-outline">Register</button>
+        </li>
+      </ul>
+
+      <button class="mobile-menu-toggle"><img src="/vectors/icon-menu.svg" alt=""></button>
+    </nav>
+  </header>
+
+  <div class="layover"></div>
+
+  <main>
+    <div class="hero">
+      <!-- <div class="hero__img-container">
+      </div> -->
+      <div class="hero__img-container"></div>
+      <div class="hero__content">
+        <h1 class="hero__title">Make remote work</h1>
+        <p class="hero__text">
+          Get your team in sync, no matter your location. Streamline processes, create team
+          rituais, and watch productivity soar.
+        </p>
+
+        <button class="btn btn-black">Load more</button>
+
+        <div class="hero__footer">
+          <img src="/vectors/client-databiz.svg" alt="">
+          <img src="/vectors/client-audiophile.svg" alt="">
+          <img src="/vectors/client-meet.svg" alt="">
+          <img src="/vectors/client-maker.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
