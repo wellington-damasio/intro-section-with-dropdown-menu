@@ -112,7 +112,7 @@ dropdowns.forEach(dropdown => {
 
 I also learned how to "Add" a side mobile navbar on mobile views without having to write more HTML
 
-``html
+```html
 <ul class="nav__list">
   <button class="btn btn-close">
     <img src="/public/vectors/icon-close-menu.svg" alt="">
